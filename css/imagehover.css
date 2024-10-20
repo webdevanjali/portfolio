@@ -1,0 +1,214 @@
+/***********************
+   Demo - 3 Styles
+***********************/
+
+/* Base Styles for Box3 */
+.box3 {
+  box-shadow: 0 0 0.3vw rgba(0,0,0,0.3); /* Converted from 3px */
+  position: relative;
+}
+
+/* Box3 Content and Pseudo-elements */
+.box3 .box-content,
+.box3:after,
+.box3:before {
+  position: absolute;
+  left: 7%; /* Original 7% */
+  right: 7%; /* Original 7% */
+  transition: all 0.3s;
+}
+
+/* Box3 Pseudo-elements */
+.box3:after,
+.box3:before {
+  display: block;
+  background: rgba(0,0,0,0.3);
+  top: 10%; /* Original 10% */
+  bottom: 10%; /* Original 10% */
+  z-index: 1;
+  transform: scale(0,1);
+}
+
+.box3:after {
+  top: 10.8%; /* Original 10.8% */
+  bottom: 10.8%; /* Original 10.8% */
+  transform: scale(1,0);
+}
+
+.box3:hover:after,
+.box3:hover:before {
+  transform: scale(0.2);
+  animation: animate 1.5s;
+}
+
+.box3:hover:before {
+  border-top: 0.3vw solid #fff; /* Converted from 3px */
+  border-bottom: 0.3vw solid #fff; /* Converted from 3px */
+}
+
+.box3:hover:after {
+  border-left: 0.3vw solid #fff; /* Converted from 3px */
+  border-right: 0.3vw solid #fff; /* Converted from 3px */
+}
+
+/* Box3 Image */
+.box3 img {
+  width: 100%;
+  height: 21vw; /* Converted from 210px */
+  transition: all 0.3s;
+}
+
+.box3:hover img {
+  transform: scale(1);
+  filter: blur(0.5vw); /* Converted from 5px */
+  -moz-filter: blur(0.5vw); /* For older Firefox */
+  -webkit-filter: blur(0.5vw); /* For older Safari */
+}
+
+/* Box3 Content */
+.box3 .box-content {
+  padding: 0 1vw; /* Converted from 10px */
+  top: 10%; /* Original 10% */
+  bottom: 10%; /* Original 10% */
+  opacity: 0;
+  z-index: 2;
+}
+
+.box3:hover .box-content {
+  box-shadow: 0 0 1vw rgba(255,255,255,0.3); /* Converted from 10px */
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+/* Box3 Title */
+.box3 .title {
+  font-size: 1.5vw; /* Original 24px */
+  font-weight: 600;
+  color: #88c425;
+  margin: 0;
+}
+
+/* Box3 Post */
+.box3 .post {
+  display: block;
+  margin: 0 0 0.5vw; /* Converted from 5px */
+  font-size: 1.4vw; /* Original 14px */
+  color: rgba(255,255,255,0.8);
+}
+
+/* Box3 Description */
+.box3 .description {
+  font-size: 1.2vw; /* Original 14px */
+  color: #fff;
+  margin: 0 0 0.2vw; /* Converted from 20px */
+}
+
+/* Box3 Icons */
+.box3 .icon {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.box3 .icon li {
+  display: inline-block;
+  margin: 0 0.1vw; /* Converted from 10px */
+}
+
+.box3 .icon li a {
+  display: block;
+  width: 5vw; /* Converted from 80px */
+  height: 3vw; /* Converted from 30px */
+  line-height: 2.5vw; /* Converted from 30px */
+  color: #fff;
+  background: #88c425;
+  transition: all 0.5s;
+  /* font-size: 0.8vw; */
+}
+
+.box3 .icon li:nth-child(2) > a {
+  width: 6vw; /* Converted from 60px */
+}
+
+.box3 .icon a:hover {
+  text-decoration: none;
+  animation: animate-hover 0.5s;
+  transition: all 0.3s;
+}
+
+/* Keyframes */
+@keyframes animate {
+  0%, 100% {
+    opacity: 1;
+  }
+}
+
+@keyframes animate-hover {
+  0% {
+    box-shadow: 0 0 15px rgba(255,255,255,0.5); /* Converted from 5px */
+  }
+  50% {
+    box-shadow: 0 0 7px rgba(255,255,255,0.5); /* Converted from 2px */
+  }
+  100% {
+    box-shadow: 0 0 1px rgba(255,255,255,0.5);
+  }
+}
+
+/* Box Shadows for Other Elements */
+.box10,
+.box11,
+.box12,
+.box14,
+.box4,
+.box5,
+.box6,
+.box7,
+.box9 {
+  box-shadow: 0 0 0.3vw rgba(0,0,0,0.3); /* Converted from 3px */
+}
+
+/* Media Queries */
+@media only screen and (max-width: 99vw) { /* Converted from 990px */
+  .box3 {
+    margin-bottom: 0;
+  }
+
+  .box3 .box-content {
+    padding: 0;
+  }
+
+  .box3 .description {
+    margin-bottom: 0;
+    line-height: 1vw; /* Converted from 15px */
+  }
+
+  .box3 .icon li > a {
+    position: absolute;
+    bottom: 5%; /* Original 5% */
+  }
+
+  .box3 .icon li:nth-child(1) > a {
+    left: 5%; /* Original 5% */
+  }
+
+  .box3 .icon li:nth-child(2) > a {
+    right: 5%; /* Original 5% */
+  }
+
+  .box3 .icon li {
+    margin: 0 0 0 2vw; /* Converted from 2% */
+  }
+
+  .box3 .icon li a {
+    width: 8vw; /* Converted from 80px */
+    height: 3vw; /* Converted from 30px */
+    line-height: 2vw; /* Converted from 30px */
+  }
+}
+
+@media only screen and (max-width: 47.9vw) { /* Converted from 479px */
+  .box3 .title {
+    margin: 0;
+  }
+}

@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>DevPortfolio</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- font Awesome 5 cdn -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+		integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<!-- font Awesome 5 cdn -->
+
+	<!-- js popover -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<!-- js popover -->
+
+	<link rel="stylesheet" href="css/projectSlider.css">
+	<link rel="stylesheet" href="css/imagehover.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="projectSlider.js"></script>
+</head>
+
+<body>
+
+	<nav id="navbar" class="navbar navbar-expand-sm bg-danger navbar-dark fix-top">
+		<ul class="navbar-nav ">
+			<li class="nav-item active">
+				<a class="nav-link" href="#welcome-section">About</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#projects">Work</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#contact">Contact</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link disabled" href="#"><s>Skills</s></a>
+			</li>
+		</ul>
+	</nav>
+	<script>
+        $(document).ready(function () {
+
+            $('ul.navbar-nav > li > a')
+                    .click(function (e) {
+                $('ul.navbar-nav > li > a')
+                    .removeClass('active');
+                $(this).addClass('active');
+            });
+        });
+    </script>
+	<div class="page">
+		<!-- END NAV -->
+
+		<!-- START WELCOME SECTION -->
+
+		<section id="welcome-section" class="welcome-section mt-4">
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+				<!-- Indicators -->
+				<ul class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+				</ul>
+
+				<!-- The slideshow -->
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="image/carousel2.jpg" class="mx-auto d-block">
+						<div class="carousel-caption">
+							<h1 class="animated bounceInRight" style="animation-delay: 1s">Hey! I'm anjali</h1>
+							<h3 class="animated bounceInLeft" style="animation-delay: 2s">A wev Developer.</h3>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img src="image/carousel1.jpg" class="mx-auto d-block">
+						<div class="carousel-caption">
+							<h1 class="animated slideInDown" style="animation-delay: 1s">some text</h1>
+							<h3 class="animated slideInRight" style="animation-delay: 2s">Lorem ipsum dolor sit amet.
+							</h3>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img src="image/carousel4.jpg" class="mx-auto d-block">
+						<div class="carousel-caption">
+							<h1 class="animated zoomIn" style="animation-delay: 1s">Best Customer Support</h1>
+							<h3 class="animated zoomIn" style="animation-delay: 2s">Lorem ipsum dolor sit amet.</h3>
+						</div>
+					</div>
+				</div>
+
+				<!-- Left and right controls -->
+
+
+
+
+				<a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+					<span class="carousel-control-prev-icon"></span>
+				</a>
+				<a class="carousel-control-next" href="#myCarousel" data-slide="next">
+					<span class="carousel-control-next-icon"></span>
+				</a>
+			</div>
+
+		</section>
+
+		<div class=" container bg-white">
+			<section id="projects" >
+				<ul class="nav nav-tabs">
+					<li class="nav-item">
+						<a class="nav-link" data-toggle="tab" href="#home">work</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link " data-toggle="tab" href="#all">All Project</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link " data-toggle="tab" href="#front-end">Front End</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" data-toggle="tab" href="#development">Development</a>
+					</li>
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div id="home" class="container tab-pane active"><br>
+						<h3>THESE ARE SOME OF MY PROJECTS</h3>
+						<!--www.ebubekirbastama.com-->
+						<div id="css3dimageslider" class="transparency">
+							<ul class="list-unstyled">
+								<li><a href="#" onclick="return false;"> <img style="width: 100%;height: 100%"
+											src="image/carousel1.jpg"></a> </li>
+								<li> <a href="#" onclick="return false;"> <img style="width: 100%;height: 100%"
+											src="image/carousel5.jpg"></a> </li>
+								<li> <a href="#" onclick="return false;"> <img style="width: 100%;height: 100%"
+											src="image/carousel4.jpg"> </a></li>
+								<li><a href="#" onclick="return false;"> <img style="width: 100%;height: 100%"
+											src="image/carousel3.jpg"></a> </li>
+							</ul>
+						</div>
+						<ul id="css3dimagePager" class="d-flex justify-content-center ">
+							<li class="list-group-item list-group-item-success">1</li>
+							<li class="list-group-item list-group-item-danger">2</li>
+							<li class="list-group-item list-group-item-warning">3</li>
+							<li class="list-group-item list-group-item-primary">4</li>
+						</ul>
+					</div>
+					<div id="all" class="container tab-pane "><br>
+						<h3 class="text-center text-info">All projects</h3>
+						<div class="row">
+							<div class="col-sm-6 col-md-4 mb-3">
+								<img src="image/carousel4.jpg" alt="" class=" img1 fluid img-thumbnail shadow">
+								<figcaption class="figure-caption text-center">
+									<a href="#" onclick="return false"
+										class="far fa-eye btn btn-info btn-sm">preview</a>
+									<a href="#" onclick="return false" class="btn btn-info"><i
+											class="fas fa-code"></i>code</a>
+								</figcaption>
+							</div>
+							<div class="col-sm-6 col-md-4 mb-3">
+								<img src="image/carousel4.jpg" alt="" class=" img1 fluid img-thumbnail shadow">
+								<figcaption class="figure-caption text-center">
+									<a href="#" onclick="return false"
+										class="far fa-eye btn btn-info btn-sm">preview</a>
+									<a href="#" onclick="return false" class="btn btn-info"><i
+											class="fas fa-code"></i>code</a>
+								</figcaption>
+							</div>
+							<div class="col-sm-6 col-md-4 mb-3">
+								<img src="image/carousel4.jpg" alt="" class=" img1 fluid img-thumbnail shadow">
+								<figcaption class="figure-caption text-center">
+									<a href="#" onclick="return false"
+										class="far fa-eye btn btn-info btn-sm">preview</a>
+									<a href="#" onclick="return false" class="btn btn-info"><i
+											class="fas fa-code"></i>code</a>
+								</figcaption>
+							</div>
+							<div class="col-sm-6 col-md-4 mb-3">
+								<img src="image/carousel4.jpg" alt="" class=" img1 fluid img-thumbnail shadow">
+								<figcaption class="figure-caption text-center">
+									<a href="#" onclick="return false"
+										class="far fa-eye btn btn-info btn-sm">preview</a>
+									<a href="#" onclick="return false" class="btn btn-info"><i
+											class="fas fa-code"></i>code</a>
+								</figcaption>
+							</div>
+							<div class="col-sm-6 col-md-4 mb-3">
+								<img src="image/carousel4.jpg" alt="" class=" img1 fluid img-thumbnail shadow">
+								<figcaption class="figure-caption text-center">
+									<a href="#" onclick="return false"
+										class="far fa-eye btn btn-info btn-sm">preview</a>
+									<a href="#" onclick="return false" class="btn btn-info"><i
+											class="fas fa-code"></i>code</a>
+								</figcaption>
+							</div>
+							<div class="col-sm-6 col-md-4 mb-3">
+								<img src="image/carousel4.jpg" alt="" class=" img1 fluid img-thumbnail shadow">
+								<figcaption class="figure-caption text-center">
+									<a href="#" onclick="return false"
+										class="far fa-eye btn btn-info btn-sm">preview</a>
+									<a href="#" onclick="return false" class="btn btn-info"><i
+											class="fas fa-code"></i>code</a>
+								</figcaption>
+							</div>
+							<script>
+								$(document).ready(function () {
+									$(".fluid").popover({ title: '<h4 class="project-tile">Project Title</h4>', content: '<p>project description</p>', html: true, trigger: "hover", placement: "top" });
+								});
+							</script>
+						</div>
+					</div>
+					<div id="front-end" class="container tab-pane "><br>
+						<div class="container mt-40 ">
+							<h3 class="text-center">THESE ARE SOME OF MY FRONT END PROJECT</h3>
+							<div class="row mt-30 ">
+								<div class="col-md-4 col-sm-6 p-3">
+									<div class="box3">
+										<img src="image/carousel1.jpg" class="">
+										<div class="box-content">
+											<h3 class="title">project title</h3>
+											<span class="post">software used</span>
+											<p class="description">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad adipisci
+												pariatur qui.
+											</p>
+											<ul class="icon">
+												<li><a href="#" class="far fa-eye">preview</a></li>
+												<li><a href="#" class="fas fa-code">code</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6 p-3">
+									<div class="box3">
+										<img src="image/carousel1.jpg" class="">
+										<div class="box-content">
+											<h3 class="title">project title</h3>
+											<span class="post">software used</span>
+											<p class="description">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad adipisci
+												pariatur qui.
+											</p>
+											<ul class="icon">
+												<li><a href="#" class="far fa-eye">preview</a></li>
+												<li><a href="#" class="fas fa-code">code</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6 p-3">
+									<div class="box3">
+										<img src="image/carousel1.jpg" class="">
+										<div class="box-content">
+											<h3 class="title">project title</h3>
+											<span class="post">software used</span>
+											<p class="description">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad adipisci
+												pariatur qui.
+											</p>
+											<ul class="icon">
+												<li><a href="#" class="far fa-eye">preview</a></li>
+												<li><a href="#" class="fas fa-code">code</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6 p-3">
+									<div class="box3">
+										<img src="image/carousel1.jpg" class="">
+										<div class="box-content">
+											<h3 class="title">project title</h3>
+											<span class="post">software used</span>
+											<p class="description">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad adipisci
+												pariatur qui.
+											</p>
+											<ul class="icon">
+												<li><a href="#" class="far fa-eye">preview</a></li>
+												<li><a href="#" class="fas fa-code">code</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6 p-3">
+									<div class="box3">
+										<img src="image/carousel1.jpg" class="">
+										<div class="box-content">
+											<h3 class="title">project title</h3>
+											<span class="post">software used</span>
+											<p class="description">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad adipisci
+												pariatur qui.
+											</p>
+											<ul class="icon">
+												<li><a href="#" class="far fa-eye">preview</a></li>
+												<li><a href="#" class="fas fa-code">code</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6 p-3">
+									<div class="box3">
+										<img src="image/carousel1.jpg" class="">
+										<div class="box-content">
+											<h3 class="title">project title</h3>
+											<span class="post">software used</span>
+											<p class="description">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad adipisci
+												pariatur qui.
+											</p>
+											<ul class="icon">
+												<li><a href="#" class="far fa-eye">preview</a></li>
+												<li><a href="#" class="fas fa-code">code</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6 p-3">
+									<div class="box3">
+										<img src="image/carousel1.jpg" class="">
+										<div class="box-content">
+											<h3 class="title">project title</h3>
+											<span class="post">software used</span>
+											<p class="description">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad adipisci
+												pariatur qui.
+											</p>
+											<ul class="icon">
+												<li><a href="#" class="far fa-eye">preview</a></li>
+												<li><a href="#" class="fas fa-code">code</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6 p-3">
+									<div class="box3">
+										<img src="image/carousel1.jpg" class="">
+										<div class="box-content">
+											<h3 class="title">project title</h3>
+											<span class="post">software used</span>
+											<p class="description">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad adipisci
+												pariatur qui.
+											</p>
+											<ul class="icon">
+												<li><a href="#" class="far fa-eye">preview</a></li>
+												<li><a href="#" class="fas fa-code">code</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="development" class="container tab-pane "><br>
+						<div class="container mt-40 ">
+							<h3 class="text-center">THESE ARE SOME OF MY BACKEND PROJECT</h3>
+							<div class="row mt-30 ">
+								<div class="col-md-4 col-sm-6 p-3">
+									<div class="box3">
+										<img src="image/carousel1.jpg" class="">
+										<div class="box-content">
+											<h3 class="title">project title</h3>
+											<span class="post">software used</span>
+											<p class="description">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad adipisci
+												pariatur qui.
+											</p>
+											<ul class="icon">
+												<li><a href="#" class="far fa-eye">preview</a></li>
+												<li><a href="#" class="fas fa-code">code</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6 p-3">
+									<div class="box3">
+										<img src="image/carousel1.jpg" class="">
+										<div class="box-content">
+											<h3 class="title">project title</h3>
+											<span class="post">software used</span>
+											<p class="description">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad adipisci
+												pariatur qui.
+											</p>
+											<ul class="icon">
+												<li><a href="#" class="far fa-eye">preview</a></li>
+												<li><a href="#" class="fas fa-code">code</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6 p-3">
+									<div class="box3">
+										<img src="image/carousel1.jpg" class="">
+										<div class="box-content">
+											<h3 class="title">project title</h3>
+											<span class="post">software used</span>
+											<p class="description">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad adipisci
+												pariatur qui.
+											</p>
+											<ul class="icon">
+												<li><a href="#" class="far fa-eye">preview</a></li>
+												<li><a href="#" class="fas fa-code">code</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6 p-3">
+									<div class="box3">
+										<img src="image/carousel1.jpg" class="">
+										<div class="box-content">
+											<h3 class="title">project title</h3>
+											<span class="post">software used</span>
+											<p class="description">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad adipisci
+												pariatur qui.
+											</p>
+											<ul class="icon">
+												<li><a href="#" class="far fa-eye">preview</a></li>
+												<li><a href="#" class="fas fa-code">code</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6 p-3">
+									<div class="box3">
+										<img src="image/carousel1.jpg" class="">
+										<div class="box-content">
+											<h3 class="title">project title</h3>
+											<span class="post">software used</span>
+											<p class="description">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad adipisci
+												pariatur qui.
+											</p>
+											<ul class="icon">
+												<li><a href="#" class="far fa-eye">preview</a></li>
+												<li><a href="#" class="fas fa-code">code</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6 p-3">
+									<div class="box3">
+										<img src="image/carousel1.jpg" class="">
+										<div class="box-content">
+											<h3 class="title">project title</h3>
+											<span class="post">software used</span>
+											<p class="description">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad adipisci
+												pariatur qui.
+											</p>
+											<ul class="icon">
+												<li><a href="#" class="far fa-eye">preview</a></li>
+												<li><a href="#" class="fas fa-code">code</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6 p-3">
+									<div class="box3">
+										<img src="image/carousel1.jpg" class="">
+										<div class="box-content">
+											<h3 class="title">project title</h3>
+											<span class="post">software used</span>
+											<p class="description">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad adipisci
+												pariatur qui.
+											</p>
+											<ul class="icon">
+												<li><a href="#" class="far fa-eye">preview</a></li>
+												<li><a href="#" class="fas fa-code">code</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6 p-3">
+									<div class="box3">
+										<img src="image/carousel1.jpg" class="">
+										<div class="box-content">
+											<h3 class="title">project title</h3>
+											<span class="post">software used</span>
+											<p class="description">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad adipisci
+												pariatur qui.
+											</p>
+											<ul class="icon">
+												<li><a href="#" class="far fa-eye">preview</a></li>
+												<li><a href="#" class="fas fa-code">code</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- START CONTACT SECTION -->
+
+			<section id="contact" class="contact-section bg-secondary text-center text-light">
+				<div class="contact-section-header ">
+					<h2>Let's work together...</h2>
+					<p>How do you take your coffee?</p>
+				</div>
+				<div class="contact-links ">
+					<a href="#" target="_blank" class="btn contact-details"><i class="fab fa-facebook-square"></i>
+						Facebook</a>
+					<a id="profile-link" href="https://github.com/freecodecamp" target="_blank"
+						class="btn contact-details"><i class="fab fa-github"></i> GitHub</a>
+					<a href="https://twitter.com/freecodecamp" target="_blank" class="btn contact-details"><i
+							class="fab fa-twitter"></i> Twitter</a>
+					<a href="mailto:example@example.com" class="btn contact-details"><i class="fas fa-at"></i> Send a
+						mail</a>
+					<a href="tel:555-555-5555" class="btn contact-details"><i class="fas fa-mobile-alt"></i> Call me</a>
+				</div>
+			</section>
+
+			<!-- END CONTACT SECTION -->
+		</div>
+	</div>
+
+	<!-- START FOOTER SECTION -->
+
+
+	<footer class="text-center bg-dark text-light">
+		<p>&copy; 2024 DevPortfolio. All rights reserved.</p>
+	</footer>
+
+	<!-- END FOOTER SECTION -->
+</body>
+
+</html>

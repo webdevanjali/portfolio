@@ -1,0 +1,328 @@
+:root{
+  --min-font-size:12px;
+}
+html {
+  scroll-behavior: smooth;
+  width: 100vw;
+  font-size: clamp(var(--min-font-size), 2vw, 20px);
+  /* Responsive base font size */
+}
+
+body {
+  background: url("../image/bg.jpg") no-repeat fixed center;
+  background-size: cover;
+}
+
+.page{
+  position:fixed;
+  top:50px;
+  bottom: 0;
+  max-height: 100vh;
+  overflow: scroll;
+}
+
+
+
+h1 {
+  font-size: clamp(var(--min-font-size), 4vw, 36px);
+}
+
+h2 {
+  font-size: clamp(var(--min-font-size), 3vw, 28px);
+}
+
+h3 {
+  font-size: clamp(var(--min-font-size), 2.5vw, 24px);
+}
+
+p,
+a {
+  font-size: clamp(var(--min-font-size), 1.8vw, 20px) ;
+}
+nav {
+  min-height: 60px; /* Increased height for better visibility */
+  padding: 0px !important;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background: linear-gradient(135deg, rgba(20, 20, 20, 0.95), rgba(10, 10, 10, 0.95)); /* Darker background gradient with subtle black shades */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Enhanced shadow for depth */
+}
+
+nav > ul {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around; /* Space out items evenly */
+  align-items: center; /* Center items vertically */
+}
+
+.navbar-nav {
+  flex-direction: row;
+}
+
+nav > ul > li {
+  margin: 0.2vw;
+  text-align: center;
+  width: 100%;}
+
+nav > ul > li > a {
+  font: "Arial Black", Gadget, sans-serif;
+  color: #e0e0e0; /* Light grey text color for contrast */
+  padding: 12px 20px; /* Adjusted padding for a more prominent button */
+  border-radius: 8px; /* Rounded corners */
+  text-transform: uppercase; /* Uppercase text */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
+  transition: all 0.3s ease; /* Smooth transition for all properties */
+  border: 2px solid transparent; /* Transparent border to animate */
+}
+
+nav > ul > li > a:hover {
+  background: linear-gradient(135deg, rgba(40, 40, 40, 0.85), rgba(30, 30, 30, 0.85)); /* Dark grey background on hover */
+  color: #fff; /* White text color on hover */
+  border: 2px solid rgba(60, 60, 60, 0.8); /* Medium grey border on hover */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Enhanced shadow effect */
+}
+
+nav > ul > li > a.active {
+  background: rgba(255, 255, 255, 0.15); /* Very light grey background for active link */
+  color: #333; /* Dark text color for the active link */
+  border: 2px solid rgba(40, 40, 40, 0.8); /* Medium grey border for the active link */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6); /* Prominent shadow for active state */
+  transform: translateY(-6px); /* Lift the active item slightly more */
+}
+
+
+#css3dimageslider ul {
+  padding-left: 0;
+}
+
+#css3dimagePager li {
+  margin-inline: 0.5vw;
+}
+
+.carousel-inner .carousel-item {
+  width: 100vw;
+  border-radius: 4px solid red;
+}
+
+.carousel-inner .carousel-item img {
+  height: 35vw; /*auto from 100vw */
+  width: 100%;
+  display: block;
+  top:200px;
+}
+
+.carousel-caption {
+  padding-bottom: 10vw;
+  /* Converted from 150px */
+}
+
+.carousel-caption h1 {
+  /* font-size: calc(78px / 1200px * 100vw); Converted from calc(78px / 1200px * 100px) */
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.carousel-control.right {
+  background-image: none;
+}
+
+.carousel-control.left {
+  background-image: none;
+}
+
+
+/* End All Projects figcaption button */
+
+/* ignore the code below */
+
+.link-area {
+  position: fixed;
+  bottom: 2vw;
+  /* Converted from 20px */
+  left: 2vw;
+  /* Converted from 20px */
+  padding: 1.5vw;
+  /* Converted from 15px */
+  border-radius: 4vw;
+  /* Converted from 40px */
+  background: tomato;
+}
+
+.link-area a {
+  text-decoration: none;
+  color: #fff;
+  /* font-size: 2.5vw; Converted from 25px */
+}
+
+/* project Section */
+.container.bg-white{
+  padding:  1vw 4vw;
+  /* Converted from 100px */
+  margin: 0 auto 40vh;
+
+}
+
+
+
+
+/*------------------------ Work/Project Section ----------------------------------*/
+#projects {
+  padding: 20px;
+}
+                                  /* project negigation tab menu */
+#projects ul.nav {
+  padding: 0.9vw;
+  margin: 0;
+  list-style: none;
+  background: linear-gradient(135deg, rgba(255, 160, 122, 0.8), rgba(255, 182, 193, 0.8), rgba(255, 223, 186, 0.8), rgba(255, 165, 131, 0.8), rgba(255, 192, 203, 0.8));
+  border-radius: 8px;
+  display: flex; /* Align items horizontally */
+  justify-content: space-evenly; /* Center items horizontally */
+  margin: 0 -5vw 0;
+}
+
+#projects li {
+  margin: 0; /* Adjust spacing between items */
+  position: relative;
+  
+}
+
+#projects .nav-item {
+  display: inline-block;
+  width: 23%;
+}
+
+#projects .nav-link {
+  display: block;
+  padding: 0;
+  padding: 0.9vw;
+  text-decoration: none;
+  color: #333; /* Dark text color for better contrast */
+  font-weight: bold;
+  transition: all 1s ease; /* Smooth transition for all states */
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.2); /* Light semi-transparent background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Default shadow */
+  border: 2px solid transparent; /* Initial border */
+}
+
+/* Hover Effect */
+#projects .nav-link:hover {
+  color: crimson; /* Light text color on hover */
+  background: rgba(0, 0, 0, 0.04); /* Darker semi-transparent background */
+  transform: scale3d(0.9,1.1,0.2) ; /* Slight lift effect */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+  border-color: rgba(255, 105, 180, 0.6); /* Gradient border color on hover */
+  /* transition: transform 2sec ease-in-out; */
+}
+
+/* Active Tab State */
+#projects .nav-link.active {
+  background: linear-gradient(135deg, rgba(255, 160, 122, 0.8), rgba(255, 182, 193, 0.8), rgba(255, 223, 186, 0.8), rgba(255, 165, 131, 0.8), rgba(255, 192, 203, 0.8));
+  color: #333; /* Dark text for active tab */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4); /* Active shadow */
+  transform: scale(1.05); /* Slightly larger scale for active tab */
+}
+
+/* Optional: Additional subtle animation for active tab */
+#projects .nav-link.active {
+  animation: pulse-active 1.5s infinite; /* Pulse effect for active state */
+}
+
+/* Pulse Animation for Active State */
+@keyframes pulse-active {
+  0% {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4), 0 0 10px rgba(255, 105, 180, 0.6);
+  }
+  50% {
+    transform: scale(1.08);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3), 0 0 15px rgba(255, 105, 180, 0.4);
+  }
+  100% {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4), 0 0 10px rgba(255, 105, 180, 0.6);
+  }
+}
+
+/*------------------------------------------------ End project Section------------------------------------ */
+
+/* Contact section */
+
+.contact-section {
+  width: 100%;
+  height: auto;
+  /* Height in viewport height is better suited here 60vw */
+  margin: 0 auto 5vh;
+}
+.contact-section div{
+  padding: 5vh 0 ;
+
+}
+.contact-section-header>h2 {
+  font-weight: bolder;
+  padding-top: 5vw;
+}
+
+.contact-section-header>p {
+  font-style: italic;
+  /* font-size: 2vw; */
+}
+
+.contact-links {
+  width: auto;
+  max-width: 98vw;
+  /* Converted from 980px */
+  margin-top: 4vw;
+  /* Converted from 4rem */
+}
+
+.contact-details {
+  /* font-size: 3vw; */
+  text-shadow: 0.5vw 0.5vw 0.4vw #1f1f1f;
+  /* Converted from 5px 5px 4px */
+  transition: transform 0.3s ease-out;
+  transform: skew(20deg);
+  color: white;
+}
+
+.contact-details:hover {
+  transform: skew(0deg) translateY(-1.5vw) scale(1.1);
+  /* Converted from -15px */
+}
+
+/* Footer */
+footer {
+  width: 100%;
+ font-weight: 500;
+  position: fixed ;
+  bottom: 0;
+}
+footer p{
+  margin: 0;
+}
+
+
+@media (max-width: 520px) {
+  /* .nav-item {
+    width: 22vw;
+    text-align: center;
+  } */
+
+  .carousel-inner .carousel-item img {
+
+    height: 80vw; /*auto from 100vw */
+  }
+
+  .page{
+    top:35px;
+  }
+
+}
