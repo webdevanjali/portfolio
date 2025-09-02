@@ -142,7 +142,7 @@
 			<section id="projects" >
 				<ul class="nav nav-tabs">
 					<li class="nav-item">
-						<a class="nav-link active" data-toggle="tab" href="#home">work</a>
+						<a class="nav-link active" data-toggle="tab" href="#work">work</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" data-toggle="tab" href="#development">Development</a>
@@ -157,19 +157,19 @@
 
 				<!-- Tab panes -->
 				<div class="tab-content">
-					<div id="home" class="container tab-pane active"><br>
+					<div id="work" class="container tab-pane active"><br>
 						<h3>THESE ARE SOME OF MY PROJECTS</h3>
 						<!--www.ebubekirbastama.com-->
 						<div id="css3dimageslider" class="transparency">
 							<ul class="list-unstyled">
 								<li><a href="https://github.com/webdevanjali/one-spot-education"  target="_blank" rel="noopener noreferrer"> <img style="width: 100%;height: 100%"
-											src="image/projectThumbnail/oneSpotEducation.png"></a> </li>
+											src="image/projectThumbnail/oneSpotEducation.png" alt="Screenshot of OneSpotEducation project homepage"></a> </li>
 								<li> <a href="https://web.archive.org/web/20230307141653/https://beeindia.gov.in/en" target="_blank" rel="noopener noreferrer" > <img style="width: 100%;height: 100%"
-											src="image/projectThumbnail/BEE-thumbnail.png"></a> </li>
+											src="image/projectThumbnail/BEE-thumbnail.png" alt="Screenshot of Bureau of Energy Efficiency project homepage"></a> </li>
 								<li> <a href="https://pec.ac.in/" target="_blank" rel="noopener noreferrer"> <img style="width: 100%;height: 100%"
-											src="image/projectThumbnail/PEC-thumbnail.png"> </a></li>
+											src="image/projectThumbnail/PEC-thumbnail.png" alt="Screenshot of Punjab Engineering College project homepage"> </a></li>
 								<li><a href="https://web.archive.org/web/20220620234330/http://dte.goa.gov.in/result/diploma-results" onclick="return false;"> <img style="width: 100%;height: 100%"
-											src="image/projectThumbnail/DTE-results-thumbnail.png"></a> </li>
+											src="image/projectThumbnail/DTE-results-thumbnail.png" alt="Screenshot of OneSpotEducation project homepage"></a> </li>
 							</ul>
 						</div>
 						<ul id="css3dimagePager" class="d-flex justify-content-center ">
@@ -180,10 +180,10 @@
 						</ul>
 					</div>
 					<div id="development" class="container tab-pane "><br>
-						<h3 class="text-center text-info">All projects</h3>
+						<h3 class="text-center text-info">THESE ARE SOME OF MY BACKEND PROJECTS</h3>
 						<div class="row">
 							<div class="col-sm-6 col-md-4 mb-3">
-								<img src="image/carousel4.jpg" alt="" class=" img1 fluid img-thumbnail shadow">
+								<img src="image/carousel4.jpg" alt="Screenshot of project homepage" class=" img1 fluid img-thumbnail shadow" data-title="title" data-content="description">
 								<figcaption class="figure-caption text-center">
 									<a href="#" onclick="return false"
 										class="far fa-eye btn btn-info btn-sm">preview</a>
@@ -192,7 +192,7 @@
 								</figcaption>
 							</div>
 							<div class="col-sm-6 col-md-4 mb-3">
-								<img src="image/carousel4.jpg" alt="" class=" img1 fluid img-thumbnail shadow">
+								<img src="image/carousel4.jpg" alt="Screenshot of project homepage" class=" img1 fluid img-thumbnail shadow" data-title="title" data-content="description">
 								<figcaption class="figure-caption text-center">
 									<a href="#" onclick="return false"
 										class="far fa-eye btn btn-info btn-sm">preview</a>
@@ -201,7 +201,7 @@
 								</figcaption>
 							</div>
 							<div class="col-sm-6 col-md-4 mb-3">
-								<img src="image/carousel4.jpg" alt="" class=" img1 fluid img-thumbnail shadow">
+								<img src="image/carousel4.jpg" alt="Screenshot of project homepage" class=" img1 fluid img-thumbnail shadow" data-title="title" data-content="description">
 								<figcaption class="figure-caption text-center">
 									<a href="#" onclick="return false"
 										class="far fa-eye btn btn-info btn-sm">preview</a>
@@ -210,7 +210,7 @@
 								</figcaption>
 							</div>
 							<div class="col-sm-6 col-md-4 mb-3">
-								<img src="image/carousel4.jpg" alt="" class=" img1 fluid img-thumbnail shadow">
+								<img src="image/carousel4.jpg" alt="Screenshot of project homepage" class=" img1 fluid img-thumbnail shadow" data-title="title" data-content="description">
 								<figcaption class="figure-caption text-center">
 									<a href="#" onclick="return false"
 										class="far fa-eye btn btn-info btn-sm">preview</a>
@@ -219,7 +219,7 @@
 								</figcaption>
 							</div>
 							<div class="col-sm-6 col-md-4 mb-3">
-								<img src="image/carousel4.jpg" alt="" class=" img1 fluid img-thumbnail shadow">
+								<img src="image/carousel4.jpg" alt="Screenshot of project homepage" class=" img1 fluid img-thumbnail shadow" data-title="title" data-content="description">
 								<figcaption class="figure-caption text-center">
 									<a href="#" onclick="return false"
 										class="far fa-eye btn btn-info btn-sm">preview</a>
@@ -228,7 +228,7 @@
 								</figcaption>
 							</div>
 							<div class="col-sm-6 col-md-4 mb-3">
-								<img src="image/carousel4.jpg" alt="" class=" img1 fluid img-thumbnail shadow">
+								<img src="image/carousel4.jpg" alt="Screenshot of project homepage" class=" img1 fluid img-thumbnail shadow" data-title="title" data-content="description">
 								<figcaption class="figure-caption text-center">
 									<a href="#" onclick="return false"
 										class="far fa-eye btn btn-info btn-sm">preview</a>
@@ -238,7 +238,17 @@
 							</div>
 							<script>
 								$(document).ready(function () {
-									$(".fluid").popover({ title: '<h4>Project Title</h4>', content: '<p>project description</p>', html: true, trigger: "hover", placement: "top" });
+									$(".fluid").each(function () {
+										var $this = $(this);
+										$this.popover({
+											title: $this.data("title"),
+											content: $this.data("content"),
+											html: true,
+											trigger: "hover",
+											placement: "top",
+											container: 'body' // optional: avoids layout issues
+										});
+									});
 								});
 							</script>
 						</div>
@@ -388,7 +398,7 @@
 					</div>
 					<div id="all" class="container tab-pane "><br>
 						<div class="container mt-40 ">
-							<h3 class="text-center">THESE ARE SOME OF MY BACKEND PROJECT</h3>
+							<h3 class="text-center">All PROJECTS</h3>
 							<div class="row mt-30 ">
 								<div class="col-md-4 col-sm-6 p-3">
 									<div class="box3">
