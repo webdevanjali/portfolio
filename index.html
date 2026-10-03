@@ -600,7 +600,8 @@
 
 
 	<footer class="text-center bg-dark text-light">
-		<p>&copy; 2025 DevPortfolio. All rights reserved.</p>
+		<p>&copy; <span id="current-year"></span> WebDevAnjali. All rights reserved.</p>
+		<script> document.getElementById('current-year').textContent = new Date().getFullYear(); </script> 
 		<marquee behavior="scroll" direction="left" scrollamount="10" loop="infinite" bgcolor="black"> 🚧 This portfolio is a work in progress! — Projects and live demos are being added soon! </marquee>
 	</footer>
 
