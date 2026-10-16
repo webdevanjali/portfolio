@@ -6,11 +6,11 @@
 	padding: 0 0 10px;
 	margin: 0;
 }
-#css3dimagePager li {
+/* #css3dimagePager li {
 	padding-right: 2em;
 	display: inline-block;
 	cursor: pointer;
-}
+} */
 #css3dimagePager li.active, #css3dtransparency.active {
 	font-weight: bold;
 }
@@ -133,7 +133,7 @@
 		padding: 0;
 	}
 	#css3dimageslider ul li:nth-child(1) {
-		-webkit-transform: translateZ(22.5vw); /* Approx 225px if viewport width is 1000px */
+		-webkit-transform: translateZ(22.5vw); Approx 225px if viewport width is 1000px
 		-moz-transform: translateZ(22.5vw);
 		-ms-transform: translateZ(22.5vw);
 		transform: translateZ(22.5vw);

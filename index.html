@@ -7,28 +7,36 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+	
+	<!-- Latest compiled JavaScript -->
+	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
 	<!-- jQuery library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+	<script src="vendor/jquery/jquery.min.js"></script>
 
 	<!-- Popper JS -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script> -->
+	<script src="vendor/popper/popper.min.js"></script>
 
-	<!-- Latest compiled JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
+	<!-- 
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	 -->
 
 	<!-- font Awesome 5 cdn -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+	<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+		integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"> -->
+	<link rel="stylesheet" href="vendor/fontawesome/css/all.css"
 		integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 	<!-- font Awesome 5 cdn -->
 
 	<!-- js popover -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -37,7 +45,7 @@
 	<link rel="stylesheet" href="css/projectSlider.css">
 	<link rel="stylesheet" href="css/imagehover.css">
 	<link rel="stylesheet" href="css/style.css">
-	<script type="text/javascript" src="projectSlider.js"></script>
+	<script type="text/javascript" src="js/projectSlider.js"></script>
 </head>
 
 <body>
@@ -141,7 +149,7 @@
 
 		<div class=" container bg-white">
 			<section id="projects" >
-				<ul class="nav nav-tabs">
+				<ul id="css3dimagePager" class="nav nav-tabs d-flex justify-content-center">
 					<li class="nav-item">
 						<a class="nav-link active" data-toggle="tab" href="#work">work</a>
 					</li>
@@ -151,34 +159,105 @@
 					<li class="nav-item">
 						<a class="nav-link " data-toggle="tab" href="#front-end">Front End</a>
 					</li>
-					<li class="nav-item d-none">
-						<a class="nav-link " data-toggle="tab" href="#all">All Project</a>
+					<li class="nav-item ">
+						<a class="nav-link " data-toggle="tab" href="#skills">Skills</a>
 					</li>
 				</ul>
-
 				<!-- Tab panes -->
 				<div class="tab-content">
-					<div id="work" class="container tab-pane active"><br>
-						<h3>THESE ARE SOME OF MY PROJECTS</h3>
-						<!--www.ebubekirbastama.com-->
-						<div id="css3dimageslider" class="transparency">
-							<ul class="list-unstyled">
-								<li><a href="https://github.com/webdevanjali/one-spot-education"  target="_blank" rel="noopener noreferrer"> <img style="width: 100%;height: 100%"
-											src="image/projectThumbnail/oneSpotEducation.png" alt="Screenshot of OneSpotEducation project homepage"></a> </li>
-								<li> <a href="https://web.archive.org/web/20230307141653/https://beeindia.gov.in/en" target="_blank" rel="noopener noreferrer" > <img style="width: 100%;height: 100%"
-											src="image/projectThumbnail/BEE-thumbnail.png" alt="Screenshot of Bureau of Energy Efficiency project homepage"></a> </li>
-								<li> <a href="https://pec.ac.in/" target="_blank" rel="noopener noreferrer"> <img style="width: 100%;height: 100%"
-											src="image/projectThumbnail/PEC-thumbnail.png" alt="Screenshot of Punjab Engineering College project homepage"> </a></li>
-								<li><a href="https://web.archive.org/web/20220620234330/http://dte.goa.gov.in/result/diploma-results" onclick="return false;"> <img style="width: 100%;height: 100%"
-											src="image/projectThumbnail/DTE-results-thumbnail.png" alt="Screenshot of OneSpotEducation project homepage"></a> </li>
-							</ul>
-						</div>
-						<ul id="css3dimagePager" class="d-flex justify-content-center ">
-							<li class="list-group-item list-group-item-success">1</li>
-							<li class="list-group-item list-group-item-danger">2</li>
-							<li class="list-group-item list-group-item-warning">3</li>
-							<li class="list-group-item list-group-item-primary">4</li>
+					<!--www.ebubekirbastama.com-->
+					<div id="css3dimageslider" class="transparency">
+						<ul class="list-unstyled">
+							<li><a href="https://github.com/webdevanjali/one-spot-education"  target="_blank" rel="noopener noreferrer"> <img style="width: 100%;height: 100%"
+										src="image/projectThumbnail/oneSpotEducation.png" alt="Screenshot of OneSpotEducation project homepage"></a> </li>
+							<li> <a href="https://web.archive.org/web/20230307141653/https://beeindia.gov.in/en" target="_blank" rel="noopener noreferrer" > <img style="width: 100%;height: 100%"
+										src="image/projectThumbnail/BEE-thumbnail.png" alt="Screenshot of Bureau of Energy Efficiency project homepage"></a> </li>
+							<li> <a href="https://pec.ac.in/" target="_blank" rel="noopener noreferrer"> <img style="width: 100%;height: 100%"
+										src="image/projectThumbnail/PEC-thumbnail.png" alt="Screenshot of Punjab Engineering College project homepage"> </a></li>
+							<li><a href="https://web.archive.org/web/20220620234330/http://dte.goa.gov.in/result/diploma-results" onclick="return false;"> <img style="width: 100%;height: 100%"
+										src="image/projectThumbnail/DTE-results-thumbnail.png" alt="Screenshot of OneSpotEducation project homepage"></a> </li>
 						</ul>
+					</div>
+					<!-- <ul id="css3dimagePager" class="d-flex justify-content-center ">
+						<li class="list-group-item list-group-item-success">1</li>
+						<li class="list-group-item list-group-item-danger">2</li>
+						<li class="list-group-item list-group-item-warning">3</li>
+						<li class="list-group-item list-group-item-primary">4</li>
+					</ul> -->
+					<div id="work" class="container tab-pane active"><br>
+						<div class="container mt-40 ">
+							<h3 class="text-center">All PROJECTS</h3>
+							<div class="row mt-30 ">
+								<div class="col-md-4 col-sm-6 p-3">
+									<div class="box3">
+										<img src="image/carousel1.jpg" class="">
+										<div class="box-content">
+											<h3 class="title">project title</h3>
+											<span class="post">software used</span>
+											<p class="description">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad adipisci
+												pariatur qui.
+											</p>
+											<ul class="icon">
+												<li><a href="#" class="far fa-eye">preview</a></li>
+												<li><a href="#" class="fas fa-code">code</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6 p-3">
+									<div class="box3">
+										<img src="image/carousel1.jpg" class="">
+										<div class="box-content">
+											<h3 class="title">project title</h3>
+											<span class="post">software used</span>
+											<p class="description">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad adipisci
+												pariatur qui.
+											</p>
+											<ul class="icon">
+												<li><a href="#" class="far fa-eye">preview</a></li>
+												<li><a href="#" class="fas fa-code">code</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6 p-3">
+									<div class="box3">
+										<img src="image/carousel1.jpg" class="">
+										<div class="box-content">
+											<h3 class="title">project title</h3>
+											<span class="post">software used</span>
+											<p class="description">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad adipisci
+												pariatur qui.
+											</p>
+											<ul class="icon">
+												<li><a href="#" class="far fa-eye">preview</a></li>
+												<li><a href="#" class="fas fa-code">code</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6 p-3">
+									<div class="box3">
+										<img src="image/carousel1.jpg" class="">
+										<div class="box-content">
+											<h3 class="title">project title</h3>
+											<span class="post">software used</span>
+											<p class="description">
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad adipisci
+												pariatur qui.
+											</p>
+											<ul class="icon">
+												<li><a href="#" class="far fa-eye">preview</a></li>
+												<li><a href="#" class="fas fa-code">code</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 					<div id="development" class="container tab-pane "><br>
 						<h3 class="text-center text-info">THESE ARE SOME OF MY BACKEND PROJECTS</h3>
